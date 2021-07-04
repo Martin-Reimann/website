@@ -3,465 +3,631 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Matthew Seaman</title>
+    <title>Martin Reimann</title>
   </head>
 
   <body>
+    <div class="flex flex-row justify-between px-8 pt-10 sm:pt-16 sm:px-0 css">
+      <h1 class="text-4xl text-shark-grey font-semibold">Martin Reimann</h1>
+      <div id="menu">
+        <i class="sm:hidden fas fa-bars text-shark-grey text-3xl mt-1.5"></i>
+      </div>
+      <a
+        href="#"
+        class="ml-32 lg:ml-96 hidden sm:flex text-xl text-shark-grey font-light"
+      >
+        Biography
+      </a>
+      <a href="#" class="hidden sm:flex text-xl text-shark-grey font-light"
+        >About</a
+      >
+    </div>
+    <div id="menu_links" class="hidden flex-col text-center sm:hidden pt-5">
+      <a href="#" class="text-2xl text-shark-grey font-light pb-2">
+        Biography
+      </a>
+      <a href="#" class="text-2xl text-shark-grey font-light">About</a>
+    </div>
     <div
+      id="about"
       class="
-        w-60
-        md:w-auto
-        font-extrabold
-        text_shadow text-5xl
-        md:text-6xl
-        lg:text-7xl
-        xl:text-8xl
-        pt-10
-        md:pt-20
-        lg:pt-24
-        xl:pt-28
-        pb-10
-        lg:pb-12
-        xl:pb-16
-        text-center text-white
-        mx-auto
+        cursor-pointer
+        mx-8
+        mt-9
+        mb-2
+        px-5
+        py-3.5
+        css
+        bg-yellow-400
+        rounded-lg
       "
     >
-      Matthew Seaman
+      <div class="flex flex-row justify-between">
+        <h1 class="text-shark-grey text-3xl">About</h1>
+        <i
+          id="about_arrow"
+          class="text-3xl text-shark-grey fas fa-chevron-circle-down pt-1.5"
+        ></i>
+      </div>
+      <h1 class="mt-6 mb-1 text-shark-grey hidden">
+        Thanks for checking in. I am an associate professor of marketing at the
+        University of Arizona with affiliations in cognitive science,
+        psychology, and veterinary medicine.
+        <br /><br />
+        My research broadly deals with the way consumers strive for desirable
+        things and people, how they feel about these things and people, and
+        whether their actions will lead to longer-term outcomes such the product
+        purchases or a new relationship.
+        <br /><br />
+        Important to me is to study consumers through the lens of different
+        methods, including asking them about their opinions, attitudes, and
+        feelings, measuring their neurophysiological responses, and observing
+        their behavior. I also think better understanding consumers’ minds and
+        behaviors will help firms better differentiate their products and stay
+        competitive.
+        <br /><br />
+        Check out some tools on designing and conducting surveys, functional
+        neuroimaging, and behavioral experiments. Data and materials are
+        available on OSF and OpenVoxel.
+        <br /><br />
+        Read more about me and my work on my research webpage at the Eller
+        College. Prospective students feel free to e-mail me.
+      </h1>
     </div>
-    <div class="w-full flex flex-wrap justify-center">
-      <div class="md:w-72 lg:w-80 xl:w-96 mb-8">
-        <img
-          src="images/profile.jpg"
-          class="rounded-xl w-64 lg:w-72 xl:w-80 m-auto object-cover"
-        />
-        <div class="flex flex-row justify-evenly">
-          <a
-            href="mailto:matthewseaman@yahoo.co.uk"
+    <div class="flex flex-col sm:flex-wrap sm:flex-row px-8 sm:px-0 css">
+      <div>
+        <div
+          class="
+            cursor-pointer
+            image
+            relative
+            w-full
+            sm:w-64 sm:mr-8
+            md:w-72
+            lg:w-64
+            xl:w-80
+            mt-7
+            flex flex-col
+          "
+        >
+          <h1
             class="
-              link
-              bg-white
-              py-1.5
-              lg:py-1
-              xl:py-0.5
-              px-3
-              mt-7
-              mb-10
-              text-center
-              h-9
-              w-24
-              lg:w-28
-              xl:w-32
-              lg:text-xl
-              xl:text-2xl
-              rounded-full
-              hidden
-              md:block
+              text-white text-center
+              p-3
+              bg-shark-grey
+              rounded-t-lg
+              sm:h-24
             "
           >
-            Contact
+            WHO WE TRUST AND LOVE? SOCIAL RELATIONS WITH PEOPLE, BRANDS, AND
+            PETS
+          </h1>
+          <img src="images/2_color.jpg" class="rounded-b-lg" />
+          <div
+            class="absolute self-center bottom-6 w-6 h-6 bg-white rounded-full"
+          ></div>
+          <i
+            class="
+              self-center
+              absolute
+              bottom-5
+              text-3xl text-shark-grey
+              fas
+              fa-chevron-circle-down
+            "
+          ></i>
+        </div>
+        <div class="hidden links flex-col sm:w-64 md:ml-4 lg:ml-0 xl:ml-8">
+          <a
+            href="#"
+            class="
+              text-center
+              bg-yellow-400
+              mx-14
+              sm:mx-5
+              p-2.5
+              text-lg text-shark-grey
+              rounded-full
+              mt-4
+              sm:text-sm
+            "
+            >Structural power and trust</a
+          >
+          <a
+            href="#"
+            class="
+              text-center
+              bg-yellow-400
+              mx-14
+              sm:mx-5
+              p-2.5
+              text-lg text-shark-grey
+              rounded-full
+              mt-4
+              sm:text-sm
+            "
+            >Trust in social relations
           </a>
           <a
-            href="images/about-me-landscape.pdf"
+            href="#"
             class="
-              link
-              bg-white
-              py-1.5
-              lg:py-1
-              xl:py-0.5
-              px-3
-              mt-7
-              mb-10
               text-center
-              h-9
-              w-20
-              lg:w-24
-              xl:w-28
-              lg:text-xl
-              xl:text-2xl
+              bg-yellow-400
+              mx-14
+              sm:mx-5
+              p-2.5
+              text-lg text-shark-grey
               rounded-full
-              hidden
-              md:block
+              mt-4
+              sm:text-sm
             "
-          >
-            About
+            >Brand-Aid
           </a>
         </div>
       </div>
+      <div>
+        <div
+          class="
+            cursor-pointer
+            image
+            relative
+            w-full
+            sm:w-64 sm:ml-8
+            md:w-72
+            lg:w-64 lg:mr-8
+            xl:w-80
+            mt-7
+            flex flex-col
+          "
+        >
+          <h1
+            class="
+              text-white text-center
+              p-3
+              bg-shark-grey
+              rounded-t-lg
+              sm:h-24
+              leading-9
+            "
+          >
+            OF PRIDE AND DESIRE: AESTHETICS IN PRODUCT DESIGN
+          </h1>
+          <img src="images/2_color.jpg" class="rounded-b-lg" />
+          <div
+            class="absolute self-center bottom-6 w-6 h-6 bg-white rounded-full"
+          ></div>
+          <i
+            class="
+              self-center
+              absolute
+              bottom-5
+              text-3xl text-shark-grey
+              fas
+              fa-chevron-circle-down
+            "
+          ></i>
+        </div>
+        <div
+          class="
+            hidden
+            links
+            flex-col
+            sm:w-64 sm:ml-8
+            md:ml-12
+            lg:ml-8
+            xl:ml-16
+          "
+        >
+          <a
+            href="#"
+            class="
+              text-center
+              bg-yellow-400
+              mx-14
+              sm:mx-5
+              p-2.5
+              text-lg text-shark-grey
+              rounded-full
+              mt-4
+              sm:text-sm
+            "
+            >Aesthetic motivation
+          </a>
+          <a
+            href="#"
+            class="
+              text-center
+              bg-yellow-400
+              mx-14
+              sm:mx-5
+              p-2.5
+              text-lg text-shark-grey
+              rounded-full
+              mt-4
+              sm:text-sm
+            "
+            >Crazy-funny-cool designs
+          </a>
+          <a
+            href="#"
+            class="
+              text-center
+              bg-yellow-400
+              mx-14
+              sm:mx-5
+              p-2.5
+              text-lg text-shark-grey
+              rounded-full
+              mt-4
+              sm:text-sm
+            "
+            >Aesthetic package design
+          </a>
+        </div>
+      </div>
+      <div>
+        <div
+          class="
+            cursor-pointer
+            image
+            relative
+            w-full
+            sm:w-64 sm:mr-8
+            md:w-72
+            lg:w-64 lg:mr-0 lg:ml-8
+            xl:w-80
+            mt-7
+            flex flex-col
+          "
+        >
+          <h1
+            class="
+              text-white text-center
+              p-3
+              bg-shark-grey
+              rounded-t-lg
+              sm:h-24
+              pt-9
+            "
+          >
+            COURSES
+          </h1>
+          <img src="images/2_color.jpg" class="rounded-b-lg" />
+          <div
+            class="absolute self-center bottom-6 w-6 h-6 bg-white rounded-full"
+          ></div>
+          <i
+            class="
+              self-center
+              absolute
+              bottom-5
+              text-3xl text-shark-grey
+              fas
+              fa-chevron-circle-down
+            "
+          ></i>
+        </div>
+        <div class="hidden links flex-col sm:w-64 md:ml-4 lg:ml-8 xl:ml-16">
+          <a
+            href="#"
+            class="
+              text-center
+              bg-yellow-400
+              mx-14
+              sm:mx-5
+              p-2.5
+              text-lg text-shark-grey
+              rounded-full
+              mt-4
+              sm:text-sm
+            "
+            >Marketing management
+          </a>
+          <a
+            href="#"
+            class="
+              text-center
+              bg-yellow-400
+              mx-14
+              sm:mx-5
+              p-2.5
+              text-lg text-shark-grey
+              rounded-full
+              mt-4
+              sm:text-sm
+            "
+            >Marketing research (MBA)
+          </a>
+          <a
+            href="#"
+            class="
+              text-center
+              bg-yellow-400
+              mx-14
+              sm:mx-5
+              p-2.5
+              text-lg text-shark-grey
+              rounded-full
+              mt-4
+              sm:text-sm
+            "
+            >Marketing research (PhD)
+          </a>
+        </div>
+      </div>
+      <div>
+        <div
+          class="
+            cursor-pointer
+            image
+            relative
+            w-full
+            sm:w-64 sm:ml-8
+            md:w-72
+            lg:w-64 lg:ml-0 lg:mr-8
+            xl:w-80
+            mt-7
+            flex flex-col
+          "
+        >
+          <h1
+            class="
+              text-white text-center
+              p-3
+              bg-shark-grey
+              rounded-t-lg
+              sm:h-24
+            "
+          >
+            EMOTIONAL-MOTIVATIONAL CONSTRUCTS IN CONSUMER BEHAVIOR
+          </h1>
+          <img src="images/2_color.jpg" class="rounded-b-lg" />
+          <div
+            class="absolute self-center bottom-6 w-6 h-6 bg-white rounded-full"
+          ></div>
+          <i
+            class="
+              self-center
+              absolute
+              bottom-5
+              text-3xl text-shark-grey
+              fas
+              fa-chevron-circle-down
+            "
+          ></i>
+        </div>
+        <div
+          class="hidden links flex-col sm:w-64 sm:ml-8 md:ml-12 lg:ml-0 xl:ml-8"
+        >
+          <a
+            href="#"
+            class="
+              text-center
+              bg-yellow-400
+              mx-14
+              sm:mx-5
+              p-2.5
+              text-lg text-shark-grey
+              rounded-full
+              mt-4
+              sm:text-sm
+            "
+            >Curiosity
+          </a>
+          <a
+            href="#"
+            class="
+              text-center
+              bg-yellow-400
+              mx-14
+              sm:mx-5
+              p-2.5
+              text-lg text-shark-grey
+              rounded-full
+              mt-4
+              sm:text-sm
+            "
+            >Betrayal
+          </a>
+          <a
+            href="#"
+            class="
+              text-center
+              bg-yellow-400
+              mx-14
+              sm:mx-5
+              p-2.5
+              text-lg text-shark-grey
+              rounded-full
+              mt-4
+              sm:text-sm
+            "
+            >Hope
+          </a>
+        </div>
+      </div>
+      <div>
+        <div
+          class="
+            cursor-pointer
+            image
+            relative
+            w-full
+            sm:w-64 sm:mr-8
+            md:w-72
+            lg:w-64 lg:ml-8 lg:mr-8
+            xl:w-80
+            mt-7
+            flex flex-col
+          "
+        >
+          <h1
+            class="
+              text-white text-center
+              p-3
+              bg-shark-grey
+              rounded-t-lg
+              sm:h-24
+              leading-9
+            "
+          >
+            ON EATING MORE (AND SOMETIMES LESS)
+          </h1>
+          <img src="images/2_color.jpg" class="rounded-b-lg" />
+          <div
+            class="absolute self-center bottom-6 w-6 h-6 bg-white rounded-full"
+          ></div>
+          <i
+            class="
+              self-center
+              absolute
+              bottom-5
+              text-3xl text-shark-grey
+              fas
+              fa-chevron-circle-down
+            "
+          ></i>
+        </div>
+        <div class="hidden links flex-col sm:w-64 md:ml-4 lg:ml-8 xl:ml-16">
+          <a
+            href="#"
+            class="
+              text-center
+              bg-yellow-400
+              mx-14
+              sm:mx-5
+              p-2.5
+              text-lg text-shark-grey
+              rounded-full
+              mt-4
+              sm:text-sm
+            "
+            >Eat dessert first?
+          </a>
+          <a
+            href="#"
+            class="
+              text-center
+              bg-yellow-400
+              mx-14
+              sm:mx-5
+              p-2.5
+              text-lg text-shark-grey
+              rounded-full
+              mt-4
+              sm:text-sm
+            "
+            >Happy half meal, happy kid
+          </a>
+          <a
+            href="#"
+            class="
+              text-center
+              bg-yellow-400
+              mx-14
+              sm:mx-5
+              p-2.5
+              text-lg text-shark-grey
+              rounded-full
+              mt-4
+              sm:text-sm
+            "
+            >Maladaptive consumption
+          </a>
+        </div>
+      </div>
+      <div>
+        <div
+          class="
+            cursor-pointer
+            image
+            relative
+            w-full
+            sm:w-64 sm:ml-8
+            md:w-72
+            lg:w-64 lg:mr-0 lg:ml-8
+            xl:w-80
+            mt-7
+            flex flex-col
+          "
+        >
+          <h1
+            class="
+              text-white text-center
+              p-3
+              bg-shark-grey
+              rounded-t-lg
+              sm:h-24
+              leading-9
+            "
+          >
+            CONSUMPTION EXPERIENCES (OR HOW DESSERTS SEEM LIKE LOSSES)
+          </h1>
+          <img src="images/2_color.jpg" class="rounded-b-lg" />
+          <div
+            class="absolute self-center bottom-6 w-6 h-6 bg-white rounded-full"
+          ></div>
+          <i
+            class="
+              self-center
+              absolute
+              bottom-5
+              text-3xl text-shark-grey
+              fas
+              fa-chevron-circle-down
+            "
+          ></i>
+        </div>
+        <div
+          class="
+            hidden
+            links
+            flex-col
+            sm:w-64 sm:ml-8
+            md:ml-12
+            lg:ml-8
+            xl:ml-16
+          "
+        >
+          <a
+            href="#"
+            class="
+              text-center
+              bg-yellow-400
+              mx-14
+              sm:mx-5
+              p-2.5
+              text-lg text-shark-grey
+              rounded-full
+              mt-4
+              sm:text-sm
+            "
+            >Experience theory
+          </a>
+          <a
+            href="#"
+            class="
+              text-center
+              bg-yellow-400
+              mx-14
+              sm:mx-5
+              p-2.5
+              text-lg text-shark-grey
+              rounded-full
+              mt-4
+              sm:text-sm
+            "
+            >Memory and experiences
+          </a>
+        </div>
+      </div>
+    </div>
+    <h1 class="pb-9 text-center text-shark-grey px-8 css sm:px-0 sm:pt-10">
+      PDF versions are provided as a professional courtesy to readers. The
+      copyright of each paper is held with the respective copyright holder. See
+      full list of papers on Google Scholar.
+    </h1>
 
-      <div class="w-full md:w-72 lg:w-80 xl:w-96 h-44">
-        <div
-          class="
-            section
-            text-lg
-            flex
-            justify-between
-            items-center
-            text-white
-            bg-roar-red
-            py-3.5
-            px-6
-            mt-3
-            md:mt-0
-            text-center
-            h-14
-            rounded-xl
-            m-auto
-            w-64
-            lg:h-16
-            lg:w-72
-            xl:w-80
-            lg:text-xl
-            xl:text-2xl
-          "
-        >
-          Journalism Work
-          <i
-            class="expand fas fa-plus-circle text-xl lg:text-2xl xl:text-3xl"
-          ></i>
-        </div>
-        <div class="max-h-0 overflow-hidden transition-height">
-          <a
-            href="http://roarnews.co.uk/author/matthew-seaman/"
-            class="
-              link
-              text-sm
-              bg-white
-              py-1
-              px-3
-              mt-3
-              text-center
-              w-52
-              rounded-full
-              mx-auto
-              block
-            "
-            >Roar News Author Page</a
-          >
-          <a
-            href="https://www.broadwayworld.com/westend/article/Guest-Blog-Matthew-Seaman-Chats-The-JAMIE-Community-20201223"
-            class="
-              link
-              text-sm
-              bg-white
-              py-1
-              px-3
-              mt-3
-              text-center
-              w-52
-              rounded-full
-              mx-auto
-              block
-            "
-            >Broadway World Article</a
-          >
-          <a
-            href="https://tresamagazine.com/2021/05/27/matthew-seaman-the-jamie-community/"
-            class="
-              link
-              text-sm
-              bg-white
-              py-1
-              px-3
-              mt-3
-              text-center
-              w-52
-              rounded-full
-              mx-auto
-              block
-            "
-            >Tresa Magazine</a
-          >
-          <a
-            href="https://open.spotify.com/episode/7JTze5oxPxSce4CoxhCLRh?si=c9vyCEFKRDm_9hz5nB_ibA&dl_branch=1"
-            class="
-              link
-              text-sm
-              bg-white
-              py-1
-              px-3
-              mt-3
-              text-center
-              w-52
-              rounded-full
-              mx-auto
-              block
-            "
-            >Roarcast Episode</a
-          >
-          <a
-            href="https://kingsbusinessreview.co.uk/have-we-overlooked-the-importance-of-theatre-in-this-pandemic-era"
-            class="
-              link
-              text-sm
-              bg-white
-              py-1
-              px-3
-              mt-3
-              text-center
-              w-52
-              rounded-2xl
-              mx-auto
-              block
-            "
-            >King’s Business Review Article</a
-          >
-          <a
-            href="https://www.londontheatrereviews.co.uk/post.cfm?p=5087"
-            class="
-              link
-              text-sm
-              bg-white
-              py-1
-              px-3
-              mt-3
-              text-center
-              w-52
-              rounded-full
-              mx-auto
-              block
-            "
-            >LTR Article</a
-          >
-        </div>
-        <div
-          class="
-            section
-            text-lg
-            flex
-            justify-between
-            items-center
-            text-white
-            bg-jamie-blue
-            py-3.5
-            px-6
-            mt-7
-            text-center
-            h-14
-            w-64
-            rounded-xl
-            m-auto
-            lg:h-16
-            lg:w-72
-            xl:w-80
-            lg:text-xl
-            xl:text-2xl
-          "
-        >
-          Jamie.Musical
-          <i
-            class="expand fas fa-plus-circle text-xl lg:text-2xl xl:text-3xl"
-          ></i>
-        </div>
-        <div class="max-h-0 overflow-hidden transition-height">
-          <a
-            href="https://www.youtube.com/watch?v=AbEe4cAPNAY&list=PLtB24dgLgg3ptDIHku0U59-EVMJWjhVvI"
-            class="
-              link
-              text-sm
-              bg-white
-              py-1
-              px-3
-              mt-3
-              text-center
-              w-52
-              rounded-full
-              mx-auto
-              block
-            "
-            >Jamie Interviews</a
-          >
-          <a
-            href="images/fan_event.pdf"
-            class="
-              link
-              text-sm
-              bg-white
-              py-1
-              px-3
-              mt-3
-              text-center
-              w-52
-              rounded-full
-              mx-auto
-              block
-            "
-            >Fan Events</a
-          >
-          <a
-            href="https://www.youtube.com/watch?v=zUohiKGM7Kw"
-            class="
-              link
-              text-sm
-              bg-white
-              py-1
-              px-3
-              mt-3
-              text-center
-              w-52
-              rounded-full
-              mx-auto
-              block
-            "
-            >Virtual Jamie Quiz</a
-          >
-        </div>
-        <div
-          class="
-            section
-            text-lg
-            flex
-            justify-between
-            items-center
-            text-white
-            bg-tms-purple
-            py-3.5
-            px-6
-            mt-7
-            text-center
-            h-14
-            w-64
-            rounded-xl
-            m-auto
-            lg:h-16
-            lg:w-72
-            xl:w-80
-            lg:text-xl
-            xl:text-2xl
-          "
-        >
-          The Masked Singer
-          <i
-            class="expand fas fa-plus-circle text-xl lg:text-2xl xl:text-3xl"
-          ></i>
-        </div>
-        <div class="max-h-0 overflow-hidden transition-height">
-          <a
-            href="https://www.thesun.co.uk/tv/13914228/masked-singer-sausage-identity-confirmed-clues/"
-            class="
-              link
-              text-sm
-              bg-white
-              py-1
-              px-3
-              mt-3
-              text-center
-              w-52
-              rounded-full
-              mx-auto
-              block
-            "
-            >The Sun Article</a
-          >
-          <a
-            href="http://roarnews.co.uk/2021/interview-how-to-become-a-tiktok-sensation-with-matthew-seaman/"
-            class="
-              link
-              text-sm
-              bg-white
-              py-1
-              px-3
-              mt-3
-              text-center
-              w-52
-              rounded-full
-              mx-auto
-              block
-            "
-            >Roar News Interview</a
-          >
-          <a
-            href="https://www.birminghammail.co.uk/whats-on/masked-singers-sausage-identity-revealed-19832073"
-            class="
-              link
-              text-sm
-              bg-white
-              py-1
-              px-3
-              mt-3
-              text-center
-              w-52
-              rounded-full
-              mx-auto
-              block
-            "
-            >Birmingham Live Article</a
-          >
-          <a
-            href="https://www.devonlive.com/news/celebs-tv/joss-stone-masked-singer-itv-4951277"
-            class="
-              link
-              text-sm
-              bg-white
-              py-1
-              px-3
-              mt-3
-              text-center
-              w-52
-              rounded-full
-              mx-auto
-              block
-            "
-            >Devon Live Article</a
-          >
-          <a
-            href="https://www.dailystar.co.uk/tv/tiktok-star-ruins-masked-singer-23494651"
-            class="
-              link
-              text-sm
-              bg-white
-              py-1
-              px-3
-              mt-3
-              text-center
-              w-52
-              rounded-full
-              mx-auto
-              block
-            "
-            >The Daily Star Article</a
-          >
-        </div>
-        <div class="flex flex-col justify-evenly">
-          <a
-            href="mailto:matthewseaman@yahoo.co.uk"
-            class="
-              link
-              md:hidden
-              bg-white
-              py-1.5
-              px-3
-              mt-10
-              mb-6
-              text-center
-              w-24
-              rounded-full
-              block
-              mx-auto
-            "
-            >Contact</a
-          >
-          <a
-            href="images/about-me-portrait.pdf"
-            class="
-              link
-              md:hidden
-              bg-white
-              py-1.5
-              px-3
-              mb-10
-              text-center
-              w-24
-              rounded-full
-              block
-              mx-auto
-            "
-            >About</a
-          >
-        </div>
-        <p><br /></p>
-      </div>
-    </div>
     <script src="index.js"></script>
   </body>
 </html>

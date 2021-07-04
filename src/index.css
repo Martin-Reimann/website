@@ -2,32 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  body {
-    background-color: black;
-    background-image: url(images/desktop_background.png);
-    background-size: 1100px;
-    background-position: top;
-    background-position-x: center;
-  }
-
-  @media (min-width: 768px) {
-    body {
-      background-size: 1700px;
-    }
-  }
-
-  img {
-    border: 4px solid #74ffd4;
+@media (min-width: 640px) {
+  .css {
+    width: 36rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-@layer components {
-  .link {
-    box-shadow: 2px -3px #ff6ff9;
+@media (min-width: 768px) {
+  .css {
+    width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
   }
+}
 
-  .text_shadow {
-    text-shadow: 3px 2px #3b68ff;
+@media (min-width: 1024px) {
+  .css {
+    width: 56rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  .css {
+    width: 68rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
