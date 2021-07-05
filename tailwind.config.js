@@ -6,7 +6,8 @@ module.exports = {
       colors: {
         white: "#FFFFFF",
         "shark-grey": "#1D243B",
-        "bumble-bee-yellow": "#F4D03F",
+        "bumble-bee-yellow": "#ABEDD8",
+        "greeny-blue": "#44CDCE",
       },
       transitionProperty: {
         height: "max-height",
