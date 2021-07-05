@@ -4,6 +4,7 @@ import "@fortawesome/fontawesome-free/js/fontawesome";
 import "./index.css";
 
 const about = document.getElementById("about");
+const image1 = document.getElementById("about");
 const images = document.getElementsByClassName("image");
 const menu = document.getElementById("menu");
 const menu_links = document.getElementById("menu_links");
@@ -75,3 +76,25 @@ for (image of images) {
     }
   });
 }
+
+image1.addEventListener("click", (e) => {
+  const image = e.currentTarget;
+  const icon = image.children[3];
+  const links = image.nextElementSibling;
+  if (icon.classList.contains("fa-chevron-circle-down")) {
+    const up_arrows = document.getElementsByClassName("fa-chevron-circle-up");
+    for (arrow of up_arrows) {
+      arrow.classList.remove("fa-chevron-circle-up");
+      arrow.classList.add("fa-chevron-circle-down");
+    }
+    icon.classList.remove("fa-chevron-circle-down");
+    icon.classList.add("fa-chevron-circle-up");
+    links.classList.remove("hidden");
+    links.classList.add("flex");
+  } else {
+    icon.classList.add("fa-chevron-circle-down");
+    icon.classList.remove("fa-chevron-circle-up");
+    links.classList.add("hidden");
+    links.classList.remove("flex");
+  }
+});
