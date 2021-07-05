@@ -44,18 +44,11 @@ for (let i = 0; i < images.length; i++) {
   const image = images[i];
   const icon = image.children[3];
   const links = image.nextElementSibling;
-  console.log(icon);
-  console.log(links);
   image.addEventListener("click", (e) => {
-    console.log("click");
-    console.log(icon.classList);
     if (icon.classList.contains("fa-chevron-circle-down")) {
-      console.log("pass1");
       for (let i = 0; i < all_links.length; i++) {
         const link = all_links[i];
-        console.log("pass2");
         if (link.classList.contains("flex")) {
-          console.log("pass3");
           link.classList.remove("flex");
           link.classList.add("hidden");
         }
@@ -85,40 +78,3 @@ for (let i = 0; i < images.length; i++) {
     }
   });
 }
-
-// for (image of images) {
-//   image.addEventListener("click", (e) => {
-//     console.log("click");
-//     const image = e.currentTarget;
-//     const icon = image.children[3];
-//     const links = image.nextElementSibling;
-//     if (icon.classList.contains("fa-chevron-circle-down")) {
-//       for (link of all_links) {
-//         if (link.classList.contains("flex")) {
-//           link.classList.remove("flex");
-//           link.classList.add("hidden");
-//         }
-//       }
-//       const up_arrows = document.getElementsByClassName("fa-chevron-circle-up");
-//       for (arrow of up_arrows) {
-//         arrow.classList.remove("fa-chevron-circle-up");
-//         arrow.classList.add("fa-chevron-circle-down");
-//       }
-//       icon.classList.remove("fa-chevron-circle-down");
-//       icon.classList.add("fa-chevron-circle-up");
-//       links.classList.remove("hidden");
-//       links.classList.add("flex");
-//     } else {
-//       icon.classList.add("fa-chevron-circle-down");
-//       icon.classList.remove("fa-chevron-circle-up");
-//       links.classList.add("hidden");
-//       links.classList.remove("flex");
-//       for (link of all_links) {
-//         if (link.classList.contains("flex")) {
-//           link.classList.remove("flex");
-//           link.classList.add("hidden");
-//         }
-//       }
-//     }
-//   });
-// }
