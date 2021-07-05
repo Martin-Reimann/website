@@ -11,9 +11,6 @@ module.exports = {
       transitionProperty: {
         height: "max-height",
       },
-      spacing: {
-        144: "36 rem",
-      },
     },
   },
   variants: {
