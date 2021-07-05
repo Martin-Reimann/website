@@ -41,16 +41,20 @@ menu.addEventListener("click", (e) => {
 });
 
 for (let i = 0; i < images.length; i++) {
-  console.log("hi");
   const image = images[i];
-  console.log(image);
   const icon = image.children[3];
   const links = image.nextElementSibling;
+  console.log(icon);
+  console.log(links);
   image.addEventListener("click", (e) => {
     console.log("click");
+    console.log(icon.classList);
     if (icon.classList.contains("fa-chevron-circle-down")) {
+      console.log("pass1");
       for (link of all_links) {
+        console.log("pass2");
         if (link.classList.contains("flex")) {
+          console.log("pass3");
           link.classList.remove("flex");
           link.classList.add("hidden");
         }
