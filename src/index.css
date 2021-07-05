@@ -2,37 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  @media (min-width: 640px) {
-    .css {
-      width: 576px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+@media (min-width: 640px) {
+  .css {
+    width: 576px;
+    margin-left: auto;
+    margin-right: auto;
   }
+}
 
-  @media (min-width: 768px) {
-    .css {
-      width: 640px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+@media (min-width: 768px) {
+  .css {
+    width: 640px;
+    margin-left: auto;
+    margin-right: auto;
   }
+}
 
-  @media (min-width: 1024px) {
-    .css {
-      width: 896px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+@media (min-width: 1024px) {
+  .css {
+    width: 896px;
+    margin-left: auto;
+    margin-right: auto;
   }
+}
 
-  @media (min-width: 1280px) {
-    .css {
-      width: 1088px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+@media (min-width: 1280px) {
+  .css {
+    width: 1088px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
