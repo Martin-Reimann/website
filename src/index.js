@@ -8,6 +8,9 @@ const images = document.getElementsByClassName("image");
 const menu = document.getElementById("menu");
 const menu_links = document.getElementById("menu_links");
 const all_links = document.getElementsByClassName("links");
+const all_color = document.getElementsByClassName("color");
+const all_bw = document.getElementsByClassName("bw");
+const all_icons = document.getElementsByClassName("img-icon");
 
 about.addEventListener("click", (e) => {
   const about = e.currentTarget;
@@ -42,9 +45,11 @@ menu.addEventListener("click", (e) => {
 
 for (let i = 0; i < images.length; i++) {
   const image = images[i];
-  const icon = image.children[3];
   const links = image.nextElementSibling;
+  const img_bw = all_bw[i];
+  const img_color = all_color[i];
   image.addEventListener("click", (e) => {
+    const icon = all_icons[i];
     if (icon.classList.contains("fa-chevron-circle-down")) {
       for (let i = 0; i < all_links.length; i++) {
         const link = all_links[i];
@@ -53,21 +58,39 @@ for (let i = 0; i < images.length; i++) {
           link.classList.add("hidden");
         }
       }
-      const up_arrows = document.getElementsByClassName("fa-chevron-circle-up");
-      for (let i = 0; i < up_arrows.length; i++) {
-        const arrow = up_arrows[i];
-        arrow.classList.remove("fa-chevron-circle-up");
-        arrow.classList.add("fa-chevron-circle-down");
+      for (let i = 0; i < all_color.length; i++) {
+        const img_color = all_color[i];
+        const img_bw = all_bw[i];
+        if (img_color.classList.contains("show")) {
+          img_color.classList.remove("show");
+          img_color.classList.add("hidden");
+          img_bw.classList.remove("hidden");
+        }
+      }
+      for (let i = 0; i < all_icons.length; i++) {
+        const icon = all_icons[i];
+        if (icon.classList.contains("fa-chevron-circle-up")) {
+          icon.classList.add("fa-chevron-circle-down");
+          icon.classList.remove("fa-chevron-circle-up");
+        }
       }
       icon.classList.remove("fa-chevron-circle-down");
       icon.classList.add("fa-chevron-circle-up");
+
       links.classList.remove("hidden");
       links.classList.add("flex");
+      console.log(img_bw);
+      img_bw.classList.add("hidden");
+      img_color.classList.remove("hidden");
+      img_color.classList.add("show");
     } else {
       icon.classList.add("fa-chevron-circle-down");
       icon.classList.remove("fa-chevron-circle-up");
       links.classList.add("hidden");
       links.classList.remove("flex");
+      img_bw.classList.remove("hidden");
+      img_color.classList.add("hidden");
+      img_color.classList.remove("show");
       for (let i = 0; i < all_links.length; i++) {
         const link = all_links[i];
         if (link.classList.contains("flex")) {
